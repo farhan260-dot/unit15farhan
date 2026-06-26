@@ -2,89 +2,85 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: linear-gradient(to right, purple, cyan);
+    background: linear-gradient(to right, #6a0dad, #00bcd4);
     color: white;
 }
 
 /* NAVBAR */
 nav {
-    background: black;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px;
+    text-align: center;
 }
 
 nav h2 {
-    color: #00d4ff;
+    margin-bottom: 10px;
+    font-size: 28px;
 }
 
 nav ul {
     display: flex;
+    justify-content: center;
     list-style: none;
-}
-
-nav ul li {
-    margin-left: 20px;
+    gap: 25px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
 }
 
 nav a:hover {
-    color: #00d4ff;
+    text-decoration: underline;
 }
 
-/* HERO SECTION */
+/* HERO / TITLE */
 .hero {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    padding: 40px;
+}
 
+/* SECTION TITLE */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* CONTENT BOXES (MATCHES YOUR IMAGE) */
+.features {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.feature-box {
+    background: lightgrey;
+    color: black;
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #1a237e;
+    text-align: center;
 }
 
 /* BUTTON */
 .button {
-    background: #00d4ff;
+    background: #00bcd4;
     color: black;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
 }
 
 /* SECTIONS */
 section {
-    padding: 60px;
     text-align: center;
-    background: transparent;
-}
-
-/* GAME CARDS */
-.features {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.feature-box {
-    background: rgba(0,0,0,0.4);
     padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    transition: 0.3s;
 }
 
-.feature-box:hover {
-    transform: scale(1.05);
-    background: rgba(0,0,0,0.7);
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
 }
-
 
 
