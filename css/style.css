@@ -1,16 +1,18 @@
+/* GENERAL */
 body {
     margin: 0;
     font-family: Arial;
-    background: #111;   /* DARK BACKGROUND */
+    background: linear-gradient(to right, purple, cyan);
     color: white;
 }
 
-/* NAV */
+/* NAVBAR */
 nav {
     background: black;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav h2 {
@@ -35,14 +37,15 @@ nav a:hover {
     color: #00d4ff;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
     height: 80vh;
-    background: linear-gradient(to right, purple, cyan);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
 }
 
 /* BUTTON */
@@ -52,9 +55,17 @@ nav a:hover {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
-/* FEATURES (FIXED MATCHING YOUR HTML) */
+/* SECTIONS */
+section {
+    padding: 60px;
+    text-align: center;
+    background: transparent;
+}
+
+/* GAME CARDS */
 .features {
     display: flex;
     justify-content: center;
@@ -63,7 +74,7 @@ nav a:hover {
 }
 
 .feature-box {
-    background: #222;
+    background: rgba(0,0,0,0.4);
     padding: 20px;
     width: 250px;
     border-radius: 10px;
@@ -72,20 +83,8 @@ nav a:hover {
 
 .feature-box:hover {
     transform: scale(1.05);
-    background: #00d4ff;
-    color: black;
+    background: rgba(0,0,0,0.7);
 }
 
-/* SECTIONS */
-section {
-    padding: 50px;
-    text-align: center;
-}
 
-/* FOOTER */
-footer {
-    background: black;
-    padding: 20px;
-    text-align: center;
-}
 
